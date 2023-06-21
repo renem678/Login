@@ -1,0 +1,134 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Code Pro', monospace;
+    box-sizing: border-box;
+} 
+
+.header{
+    height: 100vh;
+    width: 100%;
+    padding: 0 8%;
+    background: #080008;
+    position: relative;
+
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+.logo {
+    width: 400px;
+}
+
+.nav-link {
+    padding: 28px 0;
+}
+
+.nav-link li {
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.nav-link li a {
+    text-decoration: none;
+    color: whitesmoke;
+    padding: 5px 0;
+
+
+}
+
+.nav-link lo a::after{
+    content: '';
+    background: #ff3d00;
+    width: 100%;
+    height: 2px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+.card {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: slategrey;
+    padding: 4em;
+    border-radius: 20px;
+    width: 90%;
+    max-width: 900px;
+    font-family: inherit;
+    opacity: 85%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: whitesmoke;
+}
+
+form {
+    width: 60vw;
+    max-width: 500px;
+    min-width: 300px;
+    margin: 0 auto;
+    padding-bottom: 2em;
+}
+fieldset {
+    border: none;
+    padding: 2rem 0;
+    border-bottom: 3px solid whitesmoke;
+}
+
+label {
+    display: block;
+    margin: .5rem 0;
+    color: black
+}
+input, textarea {
+    background-color: rgb(78, 117, 206);
+    border: slategray;
+    color: black;
+}
+#error-msg {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+#login-error {
+    width: 23%;
+    text-align: center;
+    margin: 0;
+    padding: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    color: #8a0000;
+    border: 1px solid #8a0000;
+    background-color: #e58f8f;
+    opacity: 0;
+  }
+  #error-msg-second {
+    display: block;
+  }
+
+.inline {
+    width: unset;
+    margin: 0 .5em 0 0;
+    vertical-align: middle;
+}
+
+input[type="submit"] {
+    display: block;
+    width: 60%;
+    margin: 1em auto;
+    height: 2em;
+    font-size: 1.1rem;
+    min-width: 300px;
+}
+
+.card h1 {
+    font-size: 65px;
+    font-weight: 500;
+    margin-bottom: 40;
+}

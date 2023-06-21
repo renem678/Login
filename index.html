@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <nav>
+            <img src="logo_similar_horizontal.png" alt="logo" class="logo">
+            <ul class="nav-link">
+                <li><a href="">Home</a></li>
+                <li><a href="">Product Catalog</a></li>
+                <li><a href="">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="card">
+        <h1>Login Here</h1>
+        <div id="error-msg">
+            <p id="login-error">Invalid username, email <span id="error-msg-second">and/or password</span></p>
+        </div>
+        <form id="login-form">
+            <label for="userName">Enter Your Username: 
+                <input id="username" type="text" name="userName" placeholder="Username" required>
+            </label>
+            <label for="email">Enter Your Email: 
+                <input id="email" type="email" name="email" placeholder="user@domain.com" required>
+            <label for="password">Enter Your Password: 
+                <input id="password" type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" placeholder="Password123" required>
+            </label>
+        <input type="submit" value="Login" id="submit-form">
+        </form>
+    </div>    
+</body>
+<script src="index.js"></script>
+</html>
